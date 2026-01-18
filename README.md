@@ -5,11 +5,7 @@ It includes a modern UI, real-time mouse input, secure communication, and option
 
 This project includes:
 
-- **Windows Desktop Application** (C++ / Qt)
-- **Android Client Application** (Kotlin)
-- **Real-time mouse tracking & input**
-- **Keyboard input support (optional)**
-- **Dark/Light mode UI**
+- **Windows Desktop Application** (C# / Avalonia)
 - **Minimal latency design**
 
 ---
@@ -19,28 +15,14 @@ This project includes:
 ### Remote Mouse & Input  
 Move your mouse using your phone's touchscreen with extremely low latency.
 
-### Android Client  
-Clean, modern UI with:
-- Touchpad-style mouse controls  
-- Tap → left click  
-- Two-finger → right click  
-- Drag gestures
-
 ### Windows Desktop App  
-- Built with Qt   
-- Displays connection logs  
+- Built with C#  
 - Processing of incoming commands  
 - System tray controls
 
 ### Local Network Security  
 All communication remains on your LAN.
 
-### Modern Theme System  
-- Auto dark/light mode  
-- Smooth animations  
-- Custom noise backgrounds  
-- Responsive layout
-- 
 ## Downloads
 
 Go to the **Releases** page:
@@ -48,7 +30,6 @@ Go to the **Releases** page:
 You’ll find:
 
 - **RemotePC-Setup.zip** – Windows
-- **RemotePC.apk** – Android
 
 ---
 
@@ -56,14 +37,9 @@ You’ll find:
 
 ### Windows
 1. Download `RemotePC-Setup.zip`
-2. Extract the zip in a location that you want the app to be stored at
+2. Run the Setup.
 3. Launch **RemotePC Server**
 4. Ensure your PC and Android device are on the same Wi-Fi / LAN
-
-### Android
-1. Download the APK from Releases
-2. Install it (you may need to allow unknown sources)
-3. Open the app and enter your PC’s IP address
 
 ---
 
@@ -72,16 +48,10 @@ You’ll find:
 ### Networking
 - The Windows server listens on a known TCP port  
 - The Android client sends serialized input commands  
-- Messages include:
-  - Mouse movement deltas  
-  - Click events  
-  - Scroll  
-  - Keyboard input  
-
+ 
 ### Security
 - All data stays inside your LAN  
 - No cloud servers  
-- Optional key-based encryption for chat
 
 ---
 
