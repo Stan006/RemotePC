@@ -5,7 +5,7 @@
 [![.NET](https://img.shields.io/badge/.NET-10.0-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
 [![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?logo=windows)](https://www.microsoft.com/windows)
 [![Avalonia](https://img.shields.io/badge/UI-Avalonia%2011.3-8B5CF6)](https://avaloniaui.net/)
-[![Version](https://img.shields.io/badge/version-1.0.0.12-brightgreen)](https://github.com/Breadworks/RemotePC-CSharp/releases)
+[![Version](https://img.shields.io/badge/version-1.0.0.13-brightgreen)](https://github.com/Breadworks/RemotePC-CSharp/releases)
 
 ---
 
