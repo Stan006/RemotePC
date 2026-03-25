@@ -40,7 +40,7 @@
 
 ## Overview
 
-RemotePC Server runs as a background process on a Windows machine and exposes a multi-channel network interface for remote clients. A paired client application (e.g., a mobile app or a custom controller) connects over the local network to stream the desktop, send keyboard/mouse input, control media playback, manage power, and transfer files — without any cloud infrastructure.
+RemotePC Server runs as a background process on a Windows machine and exposes a multi-channel network interface for remote clients. A paired client application, available on the playstore and uptodown connects over the local network to stream the desktop, send keyboard/mouse input, control media playback, manage power, and transfer files, without any cloud infrastructure.
 
 The server starts minimised to the system tray on subsequent launches and auto-detects VPN connections that may interfere with LAN connectivity.
 
@@ -70,23 +70,23 @@ The server is composed of five independent network servers that run concurrently
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    RemotePC Server                       │
+│                    RemotePC Server                      │
 │                                                         │
-│  ┌──────────────┐   ┌──────────────┐   ┌────────────┐  │
-│  │  TCP Server  │   │  UDP Stream  │   │ UDP Audio  │  │
-│  │  Port 59450  │   │  Port 59452  │   │ Port 59453 │  │
-│  │              │   │              │   │            │  │
-│  │ Commands &   │   │  30 FPS JPEG │   │ 48kHz PCM  │  │
-│  │ File Transfer│   │  Screen Feed │   │ Loopback   │  │
-│  └──────────────┘   └──────────────┘   └────────────┘  │
+│  ┌──────────────┐   ┌──────────────┐   ┌────────────┐   │
+│  │  TCP Server  │   │  UDP Stream  │   │ UDP Audio  │   │
+│  │  Port 59450  │   │  Port 59452  │   │ Port 59453 │   │
+│  │              │   │              │   │            │   │
+│  │ Commands &   │   │  30 FPS JPEG │   │ 48kHz PCM  │   │
+│  │ File Transfer│   │  Screen Feed │   │ Loopback   │   │
+│  └──────────────┘   └──────────────┘   └────────────┘   │
 │                                                         │
-│  ┌──────────────┐   ┌──────────────┐                   │
-│  │  UDP Mouse   │   │ UDP Discovery│                   │
-│  │  Port 59454  │   │  Port 59451  │                   │
-│  │              │   │              │                   │
-│  │ Low-latency  │   │  Broadcast   │                   │
-│  │ Cursor Input │   │  LAN Scan    │                   │
-│  └──────────────┘   └──────────────┘                   │
+│  ┌──────────────┐   ┌──────────────┐                    │
+│  │  UDP Mouse   │   │ UDP Discovery│                    │
+│  │  Port 59454  │   │  Port 59451  │                    │
+│  │              │   │              │                    │
+│  │ Low-latency  │   │  Broadcast   │                    │
+│  │ Cursor Input │   │  LAN Scan    │                    │
+│  └──────────────┘   └──────────────┘                    │
 │                                                         │
 │           IntegrityAuthority (Client Manager)           │
 └─────────────────────────────────────────────────────────┘
