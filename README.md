@@ -449,14 +449,6 @@ On startup, the server queries the **GitHub Releases API** for the configured re
 
 ---
 
-### Prerequisites
-
-- [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0)
-- Windows 10 or later (Windows SDK 10.0.19041 required)
-- Visual Studio 2022+ or JetBrains Rider (optional, for IDE support)
-
----
-
 ## License
 
 Copyright © 2026 Breadworks. All rights reserved.
